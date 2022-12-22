@@ -11,7 +11,7 @@ export const loanCalc = async function (amount: number, tenure: number, rate: nu
     const convertedRepayment = await getExchangeRate('USD', 'NGN', totalRepayment, environment)
 
     // return the converted amount
-    return convertedRepayment;
+    return Math.ceil(parseInt(convertedRepayment.toString()) * 100) / 100;
 }
 
 export const getExchangeRate = async function(baseCurrency: string, targetCurrency: string, amount: number, environment: string) {
