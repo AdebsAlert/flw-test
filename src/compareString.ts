@@ -24,7 +24,7 @@
 // Check the length of both arrays and return false if the length is not the same
 // Loop over the first array and search for the position of each element on the second array
 // Return false if any of the element position is not found on the second array
-var compareString = function(strA: string, strB: string): boolean {
+export const compareString = function(strA: string, strB: string): boolean {
 
     // trim the variables, convert to lowercase and covert to array using the split function
     const arrA = strA.trim().toLowerCase().split('')
@@ -48,11 +48,6 @@ var compareString = function(strA: string, strB: string): boolean {
     return true
 
 }
-
-
-console.log(compareString('hello madam', 'madam hello')) // returns true
-console.log(compareString('hello madam', 'madamhello')) // returns false
-console.log(compareString('hellomadam', 'madamhello')) // returns true
 
 // BIG O Notation
 // The time complexity of this function is O(n) as on worse case scenerio, we have to loop over all the element in the first string
