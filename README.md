@@ -1,5 +1,8 @@
 # FLW TEST
 
+Flowchart for loan calculation
+![UML flowchart for loan calcultion](images/flowchart.png)
+
 Endpoint request sample diagram
 ![UML endpoint sample diagram](images/endpoint-sample.png)
 
